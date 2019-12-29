@@ -1,0 +1,79 @@
+.bouquets {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .container {
+        width: 100vw;
+        background-color: rgb(228, 228, 228);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5vh;
+
+        .title {
+            padding-top: 10px;
+            font-size: 2.2em;
+            height: 5vh;
+            width: 100%;
+            text-align: center;
+        }
+
+        .image {
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+            box-shadow: 16px 13px 15px -14px rgba(59, 59, 59, 1);
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+
+        .descr {
+            padding-top: 10px;
+            font-size: 1.2em;
+            height: 5vh;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    .title {
+        height: 5vh;
+        width: 50vw;
+
+        p {
+            margin-top: 0.5vh;
+            text-align: center;
+            font-size: 1.5em;
+            color: white;
+        }
+    }
+
+    button {
+        background-color: rgba(117, 200, 117, 0.548);
+        border: none;
+        color: rgb(39, 39, 39);
+        padding: 15px 32px;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+}

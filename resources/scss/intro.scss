@@ -1,0 +1,24 @@
+.intro {
+    height: 95vh;
+    width: 100%;
+    background-image: url(../img/flower.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-extra {
+    height: 70vh;
+    width: 70vw;
+    background-color: rgba(184, 184, 184, 0.26);
+    margin-top: 15%;
+    border-radius: 10px;
+
+    p {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,18 @@
+@import "nav";
+@import "intro";
+@import "bouquets";
+@import "contact";
+
+body {
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.671);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.outline {
+    border: 1px solid black;
+}
