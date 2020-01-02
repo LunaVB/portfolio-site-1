@@ -30,7 +30,7 @@
     :after {
         width: 100%;
         height: 5px;
-        background-color: #888;
+        background-color: rgb(202, 178, 178);
         transition: all 0.3s;
         backface-visibility: hidden;
         border-radius: 2px;
@@ -63,11 +63,9 @@
     width: 100%;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     text-align: center;
-    background: rgb(170, 170, 170);
+    background-color: rgba(128, 66, 30, 0.774);
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
-    opacity: 0;
     visibility: hidden;
-    transition: opacity .4s;
 
     &:after {
         position: absolute;
@@ -89,17 +87,16 @@ li a {
     display: block;
     margin: 0;
     padding: 0;
+    color: rgba(255, 255, 255, 0.719);
+    background-color: rgba(235, 201, 180, 0.075);
+
 
     li a {
         padding: 5px;
-        color: rgb(255, 255, 255);
         text-decoration: none;
         transition: all .2s;
 
-        &:hover,
-        &:focus {
-            background: #1ABC9C;
-            color: #fff;
-        }
     }
 }
+
+@media (min-width: 992px) {}

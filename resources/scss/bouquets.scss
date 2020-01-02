@@ -4,10 +4,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #EEE5E6;
 
     .container {
         width: 100vw;
-        background-color: rgb(228, 228, 228);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -64,7 +64,7 @@
     }
 
     button {
-        background-color: rgba(117, 200, 117, 0.548);
+        background-color: rgba(174, 180, 174, 0.548);
         border: none;
         color: rgb(39, 39, 39);
         padding: 15px 32px;
@@ -75,5 +75,61 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+
+        &:hover {
+            background-color: rgba(174, 180, 174, 0.808);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .bouquets {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        .container {
+            width: 50vw;
+            background-color: #EEE5E6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 5vh;
+        }
+    }
+}
+
+// 1080p devices (1920px and up)
+@media (min-width: 1920px) {
+    .bouquets {
+        height: auto;
+        width: 100%;
+
+        .container {
+            width: 20vw;
+
+            .title {
+                font-size: 3em;
+            }
+
+            button {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+// 4k devices (2560px and up)
+@media (min-width: 2560px) {
+    .bouquets {
+        .container {
+            .title {
+                font-size: 4em;
+            }
+
+            button {
+                font-size: 3em;
+            }
+        }
     }
 }
