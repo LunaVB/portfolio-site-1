@@ -139,13 +139,15 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5vh; }
+    padding-top: 5vh;
+    background-color: #EEE5E6; }
     .bouquets .container .title {
       padding-top: 10px;
       font-size: 2.2em;
       height: 5vh;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      color: black; }
     .bouquets .container .image {
       height: 300px;
       width: 300px;
@@ -195,7 +197,6 @@ li a {
     flex-wrap: wrap; }
     .bouquets .container {
       width: 50vw;
-      background-color: #EEE5E6;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -283,14 +284,12 @@ li a {
     .contact button {
       font-size: 1.5em; } }
 body {
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-color: rgba(128, 66, 30, 0.774); }
 
 .container {
   display: flex;
   justify-content: center; }
-
-.outline {
-  border: 1px solid black; }
 
 /*# sourceMappingURL=main.css.map */
