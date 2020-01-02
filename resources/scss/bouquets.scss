@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #EEE5E6;
+    font-family: 'Linden Hill';
 
     .container {
         width: 100vw;
@@ -78,6 +79,8 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        font-size: 1em;
+        box-shadow: 16px 13px 10px -14px rgba(59, 59, 59, 1);
 
         &:hover {
             background-color: rgba(174, 180, 174, 0.808);
@@ -90,13 +93,23 @@
         flex-direction: row;
         flex-wrap: wrap;
 
-
         .container {
             width: 50vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding-top: 5vh;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .bouquets {
+        .container {
+
+            button {
+                font-size: 1.5em;
+            }
         }
     }
 }

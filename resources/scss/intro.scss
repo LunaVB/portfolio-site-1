@@ -1,6 +1,7 @@
 .intro {
     height: 95vh;
     width: 100%;
+    font-family: 'Linden Hill';
     background-image: url(../img/bride.jpg);
     background-size: cover;
     background-position: left;
@@ -42,29 +43,31 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .intro {
-        background-position: center;
-    }
+        background-position: center top;
 
-    .intro-extra {
-        margin-top: 10vh;
-        height: 60vh;
-        width: 40vw;
-        margin-left: 50vw;
-        padding-top: 3vh;
-        padding-bottom: 12vh;
-    }
 
-    p {
-        font-size: 1.2em;
+        .intro-extra {
+            margin-top: 10vh;
+            height: 40vh;
+            width: 40vw;
+            margin-left: 50vw;
+            padding-top: 3vh;
+            padding-bottom: 12vh;
+        }
+
+        p {
+            font-size: 2.6em;
+        }
     }
 }
 
 // 1080p devices (1920px and up)
 @media (min-width: 1920px) {
     .intro {
+
         .intro-extra {
-            padding-top: 3vh;
-            padding-bottom: 10vh;
+            padding-top: 0vh;
+            padding-bottom: 18vh;
         }
 
         p {
@@ -76,9 +79,12 @@
 // 4k devices (2560px and up)
 @media (min-width: 2560px) {
     .intro {
+        .intro-extra {
+            padding-bottom: 20vh;
+        }
 
         p {
-            font-size: 4.5em;
+            font-size: 4.3em;
         }
     }
 }
