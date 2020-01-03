@@ -15,11 +15,10 @@ a {
   color: #dad6d6;
   opacity: 1;
   font-family: 'work sans', sans serif;
-  font-size: 1.5em;
+  font-size: 3vh;
   font-weight: 400;
   transition: 200ms;
 }
-
 a:hover {
   opacity: 0.5;
 }
@@ -31,6 +30,11 @@ ul {
 
 nav {
   height: 65px;
+  display: flex;
+}
+nav :last-child {
+  margin-top: 8px;
+  margin-right: 3vw;
 }
 
 #menuToggle {
@@ -44,7 +48,6 @@ nav {
   -webkit-user-select: none;
   user-select: none;
 }
-
 #menuToggle input {
   display: flex;
   width: 40px;
@@ -54,7 +57,6 @@ nav {
   opacity: 0;
   z-index: 2;
 }
-
 #menuToggle span {
   display: flex;
   width: 29px;
@@ -93,12 +95,13 @@ nav {
 
 #menu {
   position: absolute;
-  width: 20vw;
-  height: 100vh;
+  width: 17vw;
+  height: 25vh;
   margin: -50px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background-color: rgba(172, 111, 75, 0.76);
+  background-color: rgba(158, 107, 77, 0.863);
+  border-radius: 5%;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -138,23 +141,21 @@ nav {
 .intro-extra {
   height: 65vh;
   width: 70vw;
-  background-color: rgba(172, 111, 75, 0.39);
-  margin-top: 15%;
-  padding-top: 10%;
+  margin-top: 10%;
   border-radius: 20px;
 }
 .intro-extra p {
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 4vh;
+  background-color: rgba(172, 111, 75, 0.39);
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
   .intro-extra {
     height: 55vh;
     width: 60vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
     height: 55vh;
   }
   .intro-extra p {
@@ -163,33 +164,33 @@ nav {
 }
 @media (min-width: 992px) {
   .intro {
-    background-position: center top;
+    background-position: left;
   }
   .intro .intro-extra {
-    margin-top: 10vh;
     height: 40vh;
     width: 40vw;
     margin-left: 50vw;
-    padding-top: 3vh;
-    padding-bottom: 12vh;
   }
   .intro p {
     font-size: 2.6em;
   }
 }
-@media (min-width: 1920px) {
-  .intro .intro-extra {
-    padding-top: 0vh;
-    padding-bottom: 18vh;
+@media (min-width: 1280px) {
+  .intro {
+    background-position: top;
   }
+  .intro .intro-extra {
+    height: 40vh;
+    width: 40vw;
+    margin-top: 3%;
+  }
+}
+@media (min-width: 1920px) {
   .intro p {
     font-size: 3.1em;
   }
 }
 @media (min-width: 2560px) {
-  .intro .intro-extra {
-    padding-bottom: 20vh;
-  }
   .intro p {
     font-size: 4.3em;
   }
@@ -202,17 +203,23 @@ nav {
   justify-content: center;
   background-color: #EEE5E6;
   font-family: 'Linden Hill';
+  margin: 0;
+  padding: 0;
+}
+.bouquets p {
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
 }
 .bouquets .container {
-  width: 100vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 5vh;
   background-color: #EEE5E6;
 }
 .bouquets .container .title {
-  padding-top: 10px;
   font-size: 2.2em;
   height: 5vh;
   width: 100%;
@@ -233,8 +240,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .bouquets .container .descr {
   padding-top: 10px;
@@ -278,7 +285,6 @@ nav {
     flex-wrap: wrap;
   }
   .bouquets .container {
-    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,9 +300,6 @@ nav {
   .bouquets {
     height: auto;
     width: 100%;
-  }
-  .bouquets .container {
-    width: 20vw;
   }
   .bouquets .container .title {
     font-size: 3em;
@@ -330,11 +333,12 @@ nav {
 }
 .contact p {
   color: white;
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
-  font-size: 2.6em;
+  font-size: 2.5em;
   background-color: rgba(128, 128, 128, 0.315);
+  margin-top: 15vh;
 }
 .contact .wrapper {
   display: flex;
@@ -346,7 +350,7 @@ nav {
   background-color: rgba(184, 184, 184, 0.74);
   box-shadow: 16px 13px 15px -14px #3b3b3b;
   border: none;
-  width: 40%;
+  width: 50%;
   color: #292828;
   padding: 15px 32px;
   margin: 0 auto;
@@ -402,6 +406,31 @@ nav {
     font-size: 1.6em;
   }
 }
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.social-footer .social-footer-left {
+  margin-top: 3vh;
+  margin-left: 5vw;
+}
+.social-footer .social-footer-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.social-footer .social-footer-icons li {
+  list-style: none;
+  margin: 1.5vw;
+}
+.social-footer .social-footer-icons .fa {
+  font-size: 1.3rem;
+  color: white;
+}
+.social-footer .social-footer-icons .fa:hover {
+  color: #404040;
+  transition: color 0.3s ease-in;
+}
+
 body {
   padding: 0px;
   margin: 0px;

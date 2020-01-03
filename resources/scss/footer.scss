@@ -1,0 +1,30 @@
+.social-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .social-footer-left {
+        margin-top: 3vh;
+        margin-left: 5vw;
+    }
+
+    .social-footer-icons {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            margin: 1.5vw;
+        }
+
+        .fa {
+            font-size: 1.3rem;
+            color: white;
+
+            &:hover {
+                color: darken(gray, 25%);
+                transition: color 0.3s ease-in;
+            }
+        }
+
+    }
+}

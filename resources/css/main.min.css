@@ -1,9 +1,10 @@
 @font-face{font-family:Baskervville;src:url(../fonts/Baskervville-Italic.woff2) format("woff2"),url(../fonts/Baskervville-Italic.woff) format("woff");font-weight:400;font-style:italic}
 @font-face{font-family:'Linden Hill';src:url(../fonts/LindenHill.woff2) format("woff2"),url(../fonts/LindenHill.woff) format("woff");font-weight:400;font-style:normal}
-a{text-decoration:none;color:#dad6d6;opacity:1;font-family:'work sans',sans serif;font-size:1.5em;font-weight:400;transition:.2s}
+a{text-decoration:none;color:#dad6d6;opacity:1;font-family:'work sans',sans serif;font-size:3vh;font-weight:400;transition:.2s}
 a:hover{opacity:.5}
 ul{padding:0;list-style-type:none}
-nav{height:65px}
+nav{height:65px;display:flex}
+nav :last-child{margin-top:8px;margin-right:3vw}
 #menuToggle{display:flex;flex-direction:column;position:relative;width:90vw;top:25px;left:25px;z-index:1;-webkit-user-select:none;user-select:none}
 #menuToggle input{display:flex;width:40px;height:32px;position:absolute;cursor:pointer;opacity:0;z-index:2}
 #menuToggle span{display:flex;width:29px;height:2px;margin-bottom:5px;position:relative;background:#fff;border-radius:3px;z-index:1;transform-origin:5px 0;transition:transform .5s cubic-bezier(.77,.2,.05,1),background .5s cubic-bezier(.77,.2,.05,1),opacity .55s ease}
@@ -12,7 +13,7 @@ nav{height:65px}
 #menuToggle input:checked~span{opacity:1;transform:rotate(45deg) translate(-3px,-1px);background:#36383f}
 #menuToggle input:checked~span:nth-last-child(3){opacity:0;transform:rotate(0) scale(.2,.2)}
 #menuToggle input:checked~span:nth-last-child(2){transform:rotate(-45deg) translate(0,-1px)}
-#menu{position:absolute;width:20vw;height:100vh;margin:-50px 0 0 -50px;padding:50px;padding-top:125px;background-color:rgba(172,111,75,.76);-webkit-font-smoothing:antialiased;transform-origin:0 0;transform:translate(-100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1)}
+#menu{position:absolute;width:17vw;height:25vh;margin:-50px 0 0 -50px;padding:50px;padding-top:125px;background-color:rgba(158,107,77,.863);border-radius:5%;-webkit-font-smoothing:antialiased;transform-origin:0 0;transform:translate(-100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1)}
 #menu li{padding:10px}
 #menuToggle input:checked~ul{transform:none}
 @media (min-width:1920px){
@@ -22,31 +23,34 @@ a{font-size:2.5em}
 a{font-size:4em}
 }
 .intro{height:95vh;width:100%;font-family:'Linden Hill';background-image:url(../img/bride.jpg);background-size:cover;background-position:left;background-repeat:no-repeat;display:flex;justify-content:center}
-.intro-extra{height:65vh;width:70vw;background-color:rgba(172,111,75,.39);margin-top:15%;padding-top:10%;border-radius:20px}
-.intro-extra p{text-align:center;color:#fff;font-size:2em}
+.intro-extra{height:65vh;width:70vw;margin-top:10%;border-radius:20px}
+.intro-extra p{text-align:center;color:#fff;font-size:4vh;background-color:rgba(172,111,75,.39);border-radius:5px}
 @media (min-width:768px){
-.intro-extra{height:55vh;width:60vw;padding-top:3vh;padding-bottom:3vh;height:55vh}
+.intro-extra{height:55vh;width:60vw;height:55vh}
 .intro-extra p{font-size:2.4em}
 }
 @media (min-width:992px){
-.intro{background-position:center top}
-.intro .intro-extra{margin-top:10vh;height:40vh;width:40vw;margin-left:50vw;padding-top:3vh;padding-bottom:12vh}
+.intro{background-position:left}
+.intro .intro-extra{height:40vh;width:40vw;margin-left:50vw}
 .intro p{font-size:2.6em}
 }
+@media (min-width:1280px){
+.intro{background-position:top}
+.intro .intro-extra{height:40vh;width:40vw;margin-top:3%}
+}
 @media (min-width:1920px){
-.intro .intro-extra{padding-top:0;padding-bottom:18vh}
 .intro p{font-size:3.1em}
 }
 @media (min-width:2560px){
-.intro .intro-extra{padding-bottom:20vh}
 .intro p{font-size:4.3em}
 }
-.bouquets{height:auto;width:100%;display:flex;flex-direction:column;justify-content:center;background-color:#eee5e6;font-family:'Linden Hill'}
-.bouquets .container{width:100vw;display:flex;flex-direction:column;justify-content:center;padding-top:5vh;background-color:#eee5e6}
-.bouquets .container .title{padding-top:10px;font-size:2.2em;height:5vh;width:100%;text-align:center;color:#000}
+.bouquets{height:auto;width:100%;display:flex;flex-direction:column;justify-content:center;background-color:#eee5e6;font-family:'Linden Hill';margin:0;padding:0}
+.bouquets p{width:100%;text-align:center;font-size:4em}
+.bouquets .container{margin-left:1vw;margin-right:1vw;display:flex;flex-direction:column;justify-content:center;background-color:#eee5e6}
+.bouquets .container .title{font-size:2.2em;height:5vh;width:100%;text-align:center;color:#000}
 .bouquets .container .image{height:300px;width:300px;margin:0 auto}
 .bouquets .container img{height:auto;width:auto;box-shadow:16px 13px 15px -14px #3b3b3b}
-.bouquets .container .wrapper{display:flex;align-items:center;justify-content:center;margin-top:5vh;margin-bottom:5vh}
+.bouquets .container .wrapper{display:flex;align-items:center;justify-content:center;margin-top:2vh;margin-bottom:2vh}
 .bouquets .container .descr{padding-top:10px;font-size:1.2em;height:5vh;width:100%;text-align:center}
 .bouquets .title{height:5vh;width:50vw}
 .bouquets .title p{margin-top:.5vh;text-align:center;font-size:1.5em;color:#fff}
@@ -54,14 +58,13 @@ a{font-size:4em}
 .bouquets button:hover{background-color:rgba(174,180,174,.808)}
 @media (min-width:768px){
 .bouquets{flex-direction:row;flex-wrap:wrap}
-.bouquets .container{width:50vw;display:flex;flex-direction:column;justify-content:center;padding-top:5vh}
+.bouquets .container{display:flex;flex-direction:column;justify-content:center;padding-top:5vh}
 }
 @media (min-width:992px){
 .bouquets .container button{font-size:1.5em}
 }
 @media (min-width:1920px){
 .bouquets{height:auto;width:100%}
-.bouquets .container{width:20vw}
 .bouquets .container .title{font-size:3em}
 .bouquets .container button{font-size:2em}
 }
@@ -70,9 +73,9 @@ a{font-size:4em}
 .bouquets .container button{font-size:3em}
 }
 .contact{height:80vh;width:100%;font-family:Baskervville;display:flex;flex-direction:column;justify-content:center;background-image:url(../img/bride-low.jpg);background-size:cover;background-position:center;background-repeat:no-repeat;text-align:center;font-size:1.3em;background-color:#eee5e6}
-.contact p{color:#fff;width:60%;text-align:center;margin:0 auto;font-size:2.6em;background-color:rgba(128,128,128,.315)}
+.contact p{color:#fff;width:80%;text-align:center;margin:0 auto;font-size:2.5em;background-color:rgba(128,128,128,.315);margin-top:15vh}
 .contact .wrapper{display:flex;align-items:center;justify-content:center;margin-top:5vh}
-.contact button{background-color:rgba(184,184,184,.74);box-shadow:16px 13px 15px -14px #3b3b3b;border:none;width:40%;color:#292828;padding:15px 32px;margin:0 auto;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;font-family:'Linden Hill';font-size:1.2em;cursor:pointer}
+.contact button{background-color:rgba(184,184,184,.74);box-shadow:16px 13px 15px -14px #3b3b3b;border:none;width:50%;color:#292828;padding:15px 32px;margin:0 auto;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:4px 2px;font-family:'Linden Hill';font-size:1.2em;cursor:pointer}
 .contact button:hover{background-color:rgba(174,180,174,.808)}
 @media (min-width:992px){
 .contact{font-size:1.8em}
@@ -89,5 +92,11 @@ a{font-size:4em}
 .contact p{font-size:3em}
 .contact button{font-size:1.6em}
 }
+.social-footer{display:flex;justify-content:space-between}
+.social-footer .social-footer-left{margin-top:3vh;margin-left:5vw}
+.social-footer .social-footer-icons{display:flex;justify-content:space-around}
+.social-footer .social-footer-icons li{list-style:none;margin:1.5vw}
+.social-footer .social-footer-icons .fa{font-size:1.3rem;color:#fff}
+.social-footer .social-footer-icons .fa:hover{color:#404040;transition:color .3s ease-in}
 body{padding:0;margin:0;background-color:rgba(128,66,30,.774)}
 .container{display:flex;justify-content:center}
