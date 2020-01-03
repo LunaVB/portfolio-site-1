@@ -1,9 +1,10 @@
 .social-footer {
     display: flex;
     justify-content: space-between;
+    height: 5vh;
 
     .social-footer-left {
-        margin-top: 3vh;
+        margin-top: 2vh;
         margin-left: 5vw;
     }
 
@@ -13,11 +14,13 @@
 
         li {
             list-style: none;
-            margin: 1.5vw;
+            margin-left: 1.5vw;
+            margin-right: 1.5vw;
         }
 
         .fa {
-            font-size: 1.3rem;
+            margin-top: 2vh;
+            font-size: 2rem;
             color: white;
 
             &:hover {
